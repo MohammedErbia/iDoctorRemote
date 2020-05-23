@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4ADE0B002477EE2300A2125B /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE0AFF2477EE2300A2125B /* Account.storyboard */; };
+		DA7B57A5247937330042CDC8 /* DoctorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */; };
+		DA7B57A6247937330042CDC8 /* DoctorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */; };
+		DA7B57B224793AC00042CDC8 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57A824793AB90042CDC8 /* NetworkManger.swift */; };
+		DA7B57B324793AC60042CDC8 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57A924793AB90042CDC8 /* UIView+Extention.swift */; };
+		DA7B57B424793AC60042CDC8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AA24793AB90042CDC8 /* UIView+Extensions.swift */; };
+		DA7B57B624793AC60042CDC8 /* TextFiledPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AC24793AB90042CDC8 /* TextFiledPadding.swift */; };
+		DA7B57B924793AC60042CDC8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AF24793AB90042CDC8 /* Network.swift */; };
+		DA7B57BA24793AC60042CDC8 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57B024793AB90042CDC8 /* UISearchBar.swift */; };
+		DA7B57BB24793AC60042CDC8 /* String+html.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57B124793AB90042CDC8 /* String+html.swift */; };
+		DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */; };
 		DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FADF24774D8900F9FB7D /* AppDelegate.swift */; };
 		DA90FAE224774D8900F9FB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FAE124774D8900F9FB7D /* SceneDelegate.swift */; };
 		DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FAE324774D8900F9FB7D /* ViewController.swift */; };
@@ -38,6 +48,19 @@
 
 /* Begin PBXFileReference section */
 		4ADE0AFF2477EE2300A2125B /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewCell.swift; sourceTree = "<group>"; };
+		DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsTableViewCell.xib; sourceTree = "<group>"; };
+		DA7B57A824793AB90042CDC8 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
+		DA7B57A924793AB90042CDC8 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		DA7B57AA24793AB90042CDC8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		DA7B57AB24793AB90042CDC8 /* UIViewController+HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HUD.swift"; sourceTree = "<group>"; };
+		DA7B57AC24793AB90042CDC8 /* TextFiledPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFiledPadding.swift; sourceTree = "<group>"; };
+		DA7B57AD24793AB90042CDC8 /* WindowManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManger.swift; sourceTree = "<group>"; };
+		DA7B57AE24793AB90042CDC8 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
+		DA7B57AF24793AB90042CDC8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DA7B57B024793AB90042CDC8 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
+		DA7B57B124793AB90042CDC8 /* String+html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+html.swift"; sourceTree = "<group>"; };
+		DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDoctorViewController.swift; sourceTree = "<group>"; };
 		DA90FADC24774D8900F9FB7D /* iDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90FADF24774D8900F9FB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA90FAE124774D8900F9FB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +103,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA7B57A2247936FD0042CDC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */,
+				DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA7B57A724793AB90042CDC8 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				DA7B57A824793AB90042CDC8 /* NetworkManger.swift */,
+				DA7B57A924793AB90042CDC8 /* UIView+Extention.swift */,
+				DA7B57AA24793AB90042CDC8 /* UIView+Extensions.swift */,
+				DA7B57AB24793AB90042CDC8 /* UIViewController+HUD.swift */,
+				DA7B57AC24793AB90042CDC8 /* TextFiledPadding.swift */,
+				DA7B57AD24793AB90042CDC8 /* WindowManger.swift */,
+				DA7B57AE24793AB90042CDC8 /* DataUser.swift */,
+				DA7B57AF24793AB90042CDC8 /* Network.swift */,
+				DA7B57B024793AB90042CDC8 /* UISearchBar.swift */,
+				DA7B57B124793AB90042CDC8 /* String+html.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		DA90FAD324774D8900F9FB7D = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +155,9 @@
 				DA90FADF24774D8900F9FB7D /* AppDelegate.swift */,
 				DA90FAE124774D8900F9FB7D /* SceneDelegate.swift */,
 				DA90FAE324774D8900F9FB7D /* ViewController.swift */,
+				DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */,
+				DA7B57A724793AB90042CDC8 /* Extention */,
+				DA7B57A2247936FD0042CDC8 /* View */,
 				DA90FAE524774D8900F9FB7D /* Main.storyboard */,
 				DA90FAEB24774D8C00F9FB7D /* Assets.xcassets */,
 				DA90FAED24774D8C00F9FB7D /* LaunchScreen.storyboard */,
@@ -238,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7B57A6247937330042CDC8 /* DoctorsTableViewCell.xib in Resources */,
 				DA90FAEF24774D8C00F9FB7D /* LaunchScreen.storyboard in Resources */,
 				DA90FAEC24774D8C00F9FB7D /* Assets.xcassets in Resources */,
 				4ADE0B002477EE2300A2125B /* Account.storyboard in Resources */,
@@ -266,9 +319,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7B57B924793AC60042CDC8 /* Network.swift in Sources */,
+				DA7B57B224793AC00042CDC8 /* NetworkManger.swift in Sources */,
 				DA90FAEA24774D8900F9FB7D /* iDoctor.xcdatamodeld in Sources */,
+				DA7B57BA24793AC60042CDC8 /* UISearchBar.swift in Sources */,
+				DA7B57A5247937330042CDC8 /* DoctorsTableViewCell.swift in Sources */,
+				DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */,
+				DA7B57B324793AC60042CDC8 /* UIView+Extention.swift in Sources */,
 				DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */,
 				DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */,
+				DA7B57BB24793AC60042CDC8 /* String+html.swift in Sources */,
+				DA7B57B624793AC60042CDC8 /* TextFiledPadding.swift in Sources */,
+				DA7B57B424793AC60042CDC8 /* UIView+Extensions.swift in Sources */,
 				DA90FAE224774D8900F9FB7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohammed.iDoctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,7 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohammed.iDoctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
