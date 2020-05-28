@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "close.d9d2d0b1308cb694aa81.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "close.d9d2d0b1308cb694aa81-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "close.d9d2d0b1308cb694aa81-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
+  }
+}
