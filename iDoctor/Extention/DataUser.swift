@@ -50,5 +50,5 @@ func loadUser(handler: (_ Error : Error? ,_ user : userModel? )-> Void){
 func removeUser(){
      let defaults = UserDefaults.standard
     defaults.removeObject(forKey: "SavedUser")
-//    WindowManger.show(.account, animated: true)
+    WindowManger.show(.account, animated: true)
 }

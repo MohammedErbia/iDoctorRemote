@@ -15,24 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDoctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb5-8q-hZG">
-                                <rect key="frame" x="129.5" y="418" width="155.5" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" red="0.93336796759999996" green="0.93324655290000003" blue="0.93725603820000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="aplsah" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-wE-AMe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="WGS-i3-g6g">
+                                <rect key="frame" x="50" y="244" width="314" height="408"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.3921568627" green="0.7843137255" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qb5-8q-hZG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EoF-YF-UkD"/>
-                            <constraint firstItem="Qb5-8q-hZG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zsm-1D-HDO"/>
+                            <constraint firstItem="WGS-i3-g6g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="2AU-XJ-wxP"/>
+                            <constraint firstItem="WGS-i3-g6g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="623-kO-Ibc"/>
+                            <constraint firstItem="c5w-wE-AMe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8p9-Mx-Vsu"/>
+                            <constraint firstItem="WGS-i3-g6g" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="HHL-NK-dfI"/>
+                            <constraint firstAttribute="trailing" secondItem="c5w-wE-AMe" secondAttribute="trailing" id="MMb-6u-BiT"/>
+                            <constraint firstItem="WGS-i3-g6g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OEH-s9-MWT"/>
+                            <constraint firstItem="c5w-wE-AMe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Uhb-kV-mSA"/>
+                            <constraint firstAttribute="bottom" secondItem="c5w-wE-AMe" secondAttribute="bottom" id="ZoM-bQ-LFL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aplsah" width="750" height="1334"/>
+        <image name="logo1" width="1305" height="367"/>
+    </resources>
 </document>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4ADE0B002477EE2300A2125B /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE0AFF2477EE2300A2125B /* Account.storyboard */; };
+		DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AD24793AB90042CDC8 /* WindowManger.swift */; };
+		DA781FCA248158F100A3B183 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AE24793AB90042CDC8 /* DataUser.swift */; };
+		DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA781FCC248168DB00A3B183 /* UITabBarController.swift */; };
 		DA7B57A5247937330042CDC8 /* DoctorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */; };
 		DA7B57A6247937330042CDC8 /* DoctorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */; };
 		DA7B57B224793AC00042CDC8 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57A824793AB90042CDC8 /* NetworkManger.swift */; };
@@ -48,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		4ADE0AFF2477EE2300A2125B /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		DA781FCC248168DB00A3B183 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewCell.swift; sourceTree = "<group>"; };
 		DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsTableViewCell.xib; sourceTree = "<group>"; };
 		DA7B57A824793AB90042CDC8 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
@@ -103,9 +107,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA781FCB248168B500A3B183 /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DA781FCC248168DB00A3B183 /* UITabBarController.swift */,
+			);
+			path = tabBar;
+			sourceTree = "<group>";
+		};
 		DA7B57A2247936FD0042CDC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA781FCB248168B500A3B183 /* tabBar */,
 				DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */,
 				DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */,
 			);
@@ -320,12 +333,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7B57B924793AC60042CDC8 /* Network.swift in Sources */,
+				DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */,
 				DA7B57B224793AC00042CDC8 /* NetworkManger.swift in Sources */,
+				DA781FCA248158F100A3B183 /* DataUser.swift in Sources */,
 				DA90FAEA24774D8900F9FB7D /* iDoctor.xcdatamodeld in Sources */,
 				DA7B57BA24793AC60042CDC8 /* UISearchBar.swift in Sources */,
 				DA7B57A5247937330042CDC8 /* DoctorsTableViewCell.swift in Sources */,
 				DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */,
 				DA7B57B324793AC60042CDC8 /* UIView+Extention.swift in Sources */,
+				DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */,
 				DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */,
 				DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */,
 				DA7B57BB24793AC60042CDC8 /* String+html.swift in Sources */,
