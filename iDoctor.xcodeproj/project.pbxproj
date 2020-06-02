@@ -24,6 +24,7 @@
 		DA7B57BA24793AC60042CDC8 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57B024793AB90042CDC8 /* UISearchBar.swift */; };
 		DA7B57BB24793AC60042CDC8 /* String+html.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57B124793AB90042CDC8 /* String+html.swift */; };
 		DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */; };
+		DA8E3F1D24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA8E3F1C24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf */; };
 		DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FADF24774D8900F9FB7D /* AppDelegate.swift */; };
 		DA90FAE224774D8900F9FB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FAE124774D8900F9FB7D /* SceneDelegate.swift */; };
 		DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FAE324774D8900F9FB7D /* ViewController.swift */; };
@@ -77,6 +78,8 @@
 		DA7B57B024793AB90042CDC8 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		DA7B57B124793AB90042CDC8 /* String+html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+html.swift"; sourceTree = "<group>"; };
 		DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDoctorViewController.swift; sourceTree = "<group>"; };
+		DA8E3F1C24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Proxima-Nova-Sbold.otf"; sourceTree = "<group>"; };
+		DA8E3F1E24871D4A0007DDC8 /* neo-sans-arabic-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "neo-sans-arabic-regular.ttf"; sourceTree = "<group>"; };
 		DA90FADC24774D8900F9FB7D /* iDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90FADF24774D8900F9FB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA90FAE124774D8900F9FB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +135,6 @@
 				C0EAF8598E524A139C1C4230 /* Pods-iDoctorTests.debug.xcconfig */,
 				D1CCA74491F577D3343B656A /* Pods-iDoctorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +183,31 @@
 			path = Extention;
 			sourceTree = "<group>";
 		};
+		DA8E3F1B24871D3B0007DDC8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E3F2024871D6B0007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold */,
+				DA8E3F1F24871D5C0007DDC8 /* neo-sans-arabic-regular */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		DA8E3F1F24871D5C0007DDC8 /* neo-sans-arabic-regular */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E3F1E24871D4A0007DDC8 /* neo-sans-arabic-regular.ttf */,
+			);
+			path = "neo-sans-arabic-regular";
+			sourceTree = "<group>";
+		};
+		DA8E3F2024871D6B0007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E3F1C24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf */,
+			);
+			path = "FontsFree-Net-Proxima-Nova-Sbold";
+			sourceTree = "<group>";
+		};
 		DA90FAD324774D8900F9FB7D = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +237,7 @@
 				DA90FAE124774D8900F9FB7D /* SceneDelegate.swift */,
 				DA90FAE324774D8900F9FB7D /* ViewController.swift */,
 				DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */,
+				DA8E3F1B24871D3B0007DDC8 /* Font */,
 				DA7B57A724793AB90042CDC8 /* Extention */,
 				DA7B57A2247936FD0042CDC8 /* View */,
 				DA90FAE524774D8900F9FB7D /* Main.storyboard */,
@@ -349,6 +377,7 @@
 			files = (
 				DA7B57A6247937330042CDC8 /* DoctorsTableViewCell.xib in Resources */,
 				DA90FAEF24774D8C00F9FB7D /* LaunchScreen.storyboard in Resources */,
+				DA8E3F1D24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf in Resources */,
 				DA90FAEC24774D8C00F9FB7D /* Assets.xcassets in Resources */,
 				4ADE0B002477EE2300A2125B /* Account.storyboard in Resources */,
 				DA90FAE724774D8900F9FB7D /* Main.storyboard in Resources */,
