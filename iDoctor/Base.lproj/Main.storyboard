@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YfY-qw-Tni">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1167,6 +1167,9 @@
                                                 <real key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="6TX-gt-zMH" kind="show" id="BNk-Qg-0dA"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P9A-Uj-GXs">
                                         <rect key="frame" x="20" y="70" width="280" height="171"/>
@@ -1418,6 +1421,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRz-cL-VF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="974" y="-1928"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vWe-r6-HcU">
+            <objects>
+                <viewController id="06C-dH-Hnu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G2B-qH-Cmg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="72Q-TX-Ti8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rfV-3J-clc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkN-QV-mZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59" y="757"/>
         </scene>
         <!--انشاء حساب جديد-->
         <scene sceneID="4z3-RX-fVW">
@@ -1696,6 +1715,283 @@
             </objects>
             <point key="canvasLocation" x="302.89855072463769" y="-2649.1071428571427"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XJh-wd-PeT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EOC-pm-pgY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xrF-s9-8Hn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="06C-dH-Hnu" kind="relationship" relationship="rootViewController" id="V62-IL-cxW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RsC-N0-5yZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="757"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WEp-yb-IYm">
+            <objects>
+                <viewController id="NRU-nS-Xhu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YID-Kv-WUk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tNG-2o-EO3">
+                                <rect key="frame" x="20" y="108" width="374" height="342"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="85j-aD-MOD">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم الفحص" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jn-78-Qr0">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل اسم الفحص" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iIL-Kl-Zk2">
+                                                <rect key="frame" x="0.0" y="30.5" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2Mj-3F-hjJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3lk-vC-KdT">
+                                        <rect key="frame" x="0.0" y="95.5" width="374" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجهة الطبية المسؤولة عن الفحص" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noP-Bi-tSo">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="حدد الجهة الطبية" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PLR-aL-5dW">
+                                                <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ROk-vz-lTU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pK3-ca-jva">
+                                        <rect key="frame" x="0.0" y="220.5" width="374" height="121.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ملاحظات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsK-A2-YXf">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل بعض الملاحظات عن الفحص المطلوب" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4WW-T5-F2r">
+                                                <rect key="frame" x="0.0" y="30.5" width="374" height="91"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="91" id="m6g-p5-ENW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tD-pF-ich">
+                                <rect key="frame" x="50" y="500" width="314" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.86666666670000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Lms-uR-ru0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="طلب">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jp4-GK-Mzw" kind="show" id="6xg-f5-d6W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eeP-e7-fxX" firstAttribute="trailing" secondItem="tNG-2o-EO3" secondAttribute="trailing" constant="20" id="Beb-Gj-Dlv"/>
+                            <constraint firstItem="tNG-2o-EO3" firstAttribute="leading" secondItem="eeP-e7-fxX" secondAttribute="leading" constant="20" id="J2y-p6-fER"/>
+                            <constraint firstItem="eeP-e7-fxX" firstAttribute="trailing" secondItem="1tD-pF-ich" secondAttribute="trailing" constant="50" id="dBP-1k-UIt"/>
+                            <constraint firstItem="1tD-pF-ich" firstAttribute="leading" secondItem="eeP-e7-fxX" secondAttribute="leading" constant="50" id="mS2-k0-hrN"/>
+                            <constraint firstItem="1tD-pF-ich" firstAttribute="top" secondItem="tNG-2o-EO3" secondAttribute="bottom" constant="50" id="t41-Io-9XG"/>
+                            <constraint firstItem="tNG-2o-EO3" firstAttribute="top" secondItem="eeP-e7-fxX" secondAttribute="top" constant="20" id="wtW-oy-f0C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eeP-e7-fxX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sj6-6O-XyZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMH-V1-teW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="757"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bjc-Jz-lwW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6TX-gt-zMH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="q5M-yK-ZFD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dt6-tm-VkX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.86666666670000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NRU-nS-Xhu" kind="relationship" relationship="rootViewController" id="2mf-sa-U2V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lqe-7B-090" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="757"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sLC-zb-Wej">
+            <objects>
+                <viewController id="sHv-J6-PmK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="19r-1c-bg7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gyo-dR-Rs5">
+                                <rect key="frame" x="20" y="108" width="374" height="217"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-W4-QSJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان التشخيص" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO5-8p-14m">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل عنوان التشخيص" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzu-8n-xsz">
+                                                <rect key="frame" x="0.0" y="30.5" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="RkD-Zt-HaB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-7b-pOF">
+                                        <rect key="frame" x="0.0" y="95.5" width="374" height="121.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" التشخيص / ملاحظات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCE-yr-hfI">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل التشخيص" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWu-y0-ZZM">
+                                                <rect key="frame" x="0.0" y="30.5" width="374" height="91"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="91" id="WhI-Ro-y2T"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzH-wV-sO1">
+                                <rect key="frame" x="50" y="345" width="314" height="107"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q3-ha-KHO">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="6xN-BI-6aR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="ارفاق ملف">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IB-Bs-IOp">
+                                        <rect key="frame" x="0.0" y="62" width="314" height="45"/>
+                                        <color key="backgroundColor" red="0.0" green="0.86666666670000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ufv-ld-yB5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="اضافة">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bzH-wV-sO1" firstAttribute="leading" secondItem="oxL-95-bqj" secondAttribute="leading" constant="50" id="9pP-Nn-t05"/>
+                            <constraint firstItem="oxL-95-bqj" firstAttribute="trailing" secondItem="gyo-dR-Rs5" secondAttribute="trailing" constant="20" id="EI1-a6-fbx"/>
+                            <constraint firstItem="oxL-95-bqj" firstAttribute="trailing" secondItem="bzH-wV-sO1" secondAttribute="trailing" constant="50" id="I1h-22-2dX"/>
+                            <constraint firstItem="bzH-wV-sO1" firstAttribute="top" secondItem="gyo-dR-Rs5" secondAttribute="bottom" constant="20" id="SAE-za-quh"/>
+                            <constraint firstItem="gyo-dR-Rs5" firstAttribute="leading" secondItem="oxL-95-bqj" secondAttribute="leading" constant="20" id="ts3-dL-fH2"/>
+                            <constraint firstItem="gyo-dR-Rs5" firstAttribute="top" secondItem="oxL-95-bqj" secondAttribute="top" constant="20" id="wrH-w1-S4c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oxL-95-bqj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="udP-fD-Y1w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbK-Su-jkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3152" y="757"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HKv-IT-vLE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jp4-GK-Mzw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="frX-2p-0GD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="313-Jk-8vd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.86666666670000003" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sHv-J6-PmK" kind="relationship" relationship="rootViewController" id="bXT-iX-6mz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cxh-9h-Kvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328" y="757"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ymE-ZV-g0k"/>
@@ -1707,8 +2003,8 @@
         <image name="lock" catalog="system" width="128" height="128"/>
         <image name="map" width="23" height="32"/>
         <image name="notification" width="22" height="29"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person" width="30" height="35.5"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person-1" width="310" height="310"/>
         <image name="profile" width="22" height="25"/>
         <image name="search" width="51.5" height="51.5"/>
