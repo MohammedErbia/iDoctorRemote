@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		3F7CD084E434CFF8A30D4CD5 /* Pods_iDoctor_iDoctorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB9B98D4CD72B1F1E6DB776 /* Pods_iDoctor_iDoctorUITests.framework */; };
 		462B793EB9B896A791DE1608 /* Pods_iDoctor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F69C0326EBA70AD9B50A98 /* Pods_iDoctor.framework */; };
-		4A450870248D4A1700F12DBD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45086F248D4A1700F12DBD /* LoginVC.swift */; };
 		4A450872248D4A3700F12DBD /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450871248D4A3700F12DBD /* SingUpVC.swift */; };
 		4A450874248D4A5300F12DBD /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450873248D4A5300F12DBD /* AccountVC.swift */; };
 		4A450876248D4A6D00F12DBD /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450875248D4A6D00F12DBD /* RatingVC.swift */; };
 		4ADE0B002477EE2300A2125B /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE0AFF2477EE2300A2125B /* Account.storyboard */; };
 		C05C49CE8737ABF96095A959 /* Pods_iDoctorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2563DFD3505B735450E109 /* Pods_iDoctorTests.framework */; };
+		DA1D5C642492C3AF005828C9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C632492C3AF005828C9 /* LoginVC.swift */; };
 		DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AD24793AB90042CDC8 /* WindowManger.swift */; };
 		DA781FCA248158F100A3B183 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AE24793AB90042CDC8 /* DataUser.swift */; };
 		DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA781FCC248168DB00A3B183 /* UITabBarController.swift */; };
@@ -59,7 +59,6 @@
 /* Begin PBXFileReference section */
 		2F15D8451F650D7A0F2D9671 /* Pods-iDoctor-iDoctorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDoctor-iDoctorUITests.debug.xcconfig"; path = "Target Support Files/Pods-iDoctor-iDoctorUITests/Pods-iDoctor-iDoctorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3EB9B98D4CD72B1F1E6DB776 /* Pods_iDoctor_iDoctorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDoctor_iDoctorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A45086F248D4A1700F12DBD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = "../New Group/LoginVC.swift"; sourceTree = "<group>"; };
 		4A450871248D4A3700F12DBD /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
 		4A450873248D4A5300F12DBD /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		4A450875248D4A6D00F12DBD /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		C0EAF8598E524A139C1C4230 /* Pods-iDoctorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDoctorTests.debug.xcconfig"; path = "Target Support Files/Pods-iDoctorTests/Pods-iDoctorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA2563DFD3505B735450E109 /* Pods_iDoctorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDoctorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CCA74491F577D3343B656A /* Pods-iDoctorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDoctorTests.release.xcconfig"; path = "Target Support Files/Pods-iDoctorTests/Pods-iDoctorTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA1D5C632492C3AF005828C9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DA781FCC248168DB00A3B183 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewCell.swift; sourceTree = "<group>"; };
 		DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsTableViewCell.xib; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			children = (
 				4A450873248D4A5300F12DBD /* AccountVC.swift */,
 				4A450871248D4A3700F12DBD /* SingUpVC.swift */,
-				4A45086F248D4A1700F12DBD /* LoginVC.swift */,
+				DA1D5C632492C3AF005828C9 /* LoginVC.swift */,
 			);
 			name = Account;
 			path = "../New Group1/Account";
@@ -521,7 +521,7 @@
 				DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */,
 				DA7B57B324793AC60042CDC8 /* UIView+Extention.swift in Sources */,
 				DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */,
-				4A450870248D4A1700F12DBD /* LoginVC.swift in Sources */,
+				DA1D5C642492C3AF005828C9 /* LoginVC.swift in Sources */,
 				DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */,
 				DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */,
 				DA7B57BB24793AC60042CDC8 /* String+html.swift in Sources */,
