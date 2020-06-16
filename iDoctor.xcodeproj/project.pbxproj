@@ -18,6 +18,8 @@
 		DA1D5C8A24983AFA005828C9 /* appointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C8824983AFA005828C9 /* appointmentTableViewCell.swift */; };
 		DA1D5C8B24983AFA005828C9 /* appointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1D5C8924983AFA005828C9 /* appointmentTableViewCell.xib */; };
 		DA1D5C8D24984074005828C9 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */; };
+		DA1D5C942498FF24005828C9 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C932498FF24005828C9 /* searchViewController.swift */; };
+		DA1D5C962498FF74005828C9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C952498FF74005828C9 /* NotificationViewController.swift */; };
 		DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AD24793AB90042CDC8 /* WindowManger.swift */; };
 		DA781FCA248158F100A3B183 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AE24793AB90042CDC8 /* DataUser.swift */; };
 		DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA781FCC248168DB00A3B183 /* UITabBarController.swift */; };
@@ -77,6 +79,8 @@
 		DA1D5C8824983AFA005828C9 /* appointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointmentTableViewCell.swift; sourceTree = "<group>"; };
 		DA1D5C8924983AFA005828C9 /* appointmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = appointmentTableViewCell.xib; sourceTree = "<group>"; };
 		DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
+		DA1D5C932498FF24005828C9 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		DA1D5C952498FF74005828C9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		DA781FCC248168DB00A3B183 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewCell.swift; sourceTree = "<group>"; };
 		DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsTableViewCell.xib; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 			children = (
 				DA1D5C8E24984647005828C9 /* Cell */,
 				DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */,
+				DA1D5C932498FF24005828C9 /* searchViewController.swift */,
+				DA1D5C952498FF74005828C9 /* NotificationViewController.swift */,
 				DA90FAE324774D8900F9FB7D /* ViewController.swift */,
 				4A450875248D4A6D00F12DBD /* RatingVC.swift */,
 				DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */,
@@ -530,7 +536,9 @@
 				DA7B57B924793AC60042CDC8 /* Network.swift in Sources */,
 				DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */,
 				DA7B57B224793AC00042CDC8 /* NetworkManger.swift in Sources */,
+				DA1D5C942498FF24005828C9 /* searchViewController.swift in Sources */,
 				4A450876248D4A6D00F12DBD /* RatingVC.swift in Sources */,
+				DA1D5C962498FF74005828C9 /* NotificationViewController.swift in Sources */,
 				4A450872248D4A3700F12DBD /* SingUpVC.swift in Sources */,
 				DA781FCA248158F100A3B183 /* DataUser.swift in Sources */,
 				DA90FAEA24774D8900F9FB7D /* iDoctor.xcdatamodeld in Sources */,
