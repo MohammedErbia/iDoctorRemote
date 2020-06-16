@@ -18,8 +18,6 @@
 		DA1D5C8A24983AFA005828C9 /* appointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C8824983AFA005828C9 /* appointmentTableViewCell.swift */; };
 		DA1D5C8B24983AFA005828C9 /* appointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1D5C8924983AFA005828C9 /* appointmentTableViewCell.xib */; };
 		DA1D5C8D24984074005828C9 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */; };
-		DA1D5C9024984712005828C9 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C8F24984712005828C9 /* searchViewController.swift */; };
-		DA1D5C9224984CB4005828C9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C9124984CB4005828C9 /* NotificationViewController.swift */; };
 		DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AD24793AB90042CDC8 /* WindowManger.swift */; };
 		DA781FCA248158F100A3B183 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AE24793AB90042CDC8 /* DataUser.swift */; };
 		DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA781FCC248168DB00A3B183 /* UITabBarController.swift */; };
@@ -79,8 +77,6 @@
 		DA1D5C8824983AFA005828C9 /* appointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointmentTableViewCell.swift; sourceTree = "<group>"; };
 		DA1D5C8924983AFA005828C9 /* appointmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = appointmentTableViewCell.xib; sourceTree = "<group>"; };
 		DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
-		DA1D5C8F24984712005828C9 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
-		DA1D5C9124984CB4005828C9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		DA781FCC248168DB00A3B183 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewCell.swift; sourceTree = "<group>"; };
 		DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsTableViewCell.xib; sourceTree = "<group>"; };
@@ -159,8 +155,6 @@
 				DA7B57BC24793FB10042CDC8 /* DetailsDoctorViewController.swift */,
 				DA90FAE324774D8900F9FB7D /* ViewController.swift */,
 				4A450875248D4A6D00F12DBD /* RatingVC.swift */,
-				DA1D5C8F24984712005828C9 /* searchViewController.swift */,
-				DA1D5C9124984CB4005828C9 /* NotificationViewController.swift */,
 				DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */,
 			);
 			path = Main;
@@ -546,8 +540,6 @@
 				DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */,
 				DA7B57B324793AC60042CDC8 /* UIView+Extention.swift in Sources */,
 				DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */,
-				DA1D5C9224984CB4005828C9 /* NotificationViewController.swift in Sources */,
-				DA1D5C9024984712005828C9 /* searchViewController.swift in Sources */,
 				DA1D5C642492C3AF005828C9 /* LoginVC.swift in Sources */,
 				DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */,
 				DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */,
@@ -729,7 +721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AB5YCW396A;
+				DEVELOPMENT_TEAM = CPH5Q6DCQM;
 				INFOPLIST_FILE = iDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -748,7 +740,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AB5YCW396A;
+				DEVELOPMENT_TEAM = CPH5Q6DCQM;
 				INFOPLIST_FILE = iDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
