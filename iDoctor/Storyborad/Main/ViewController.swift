@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -16,7 +18,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         tableView.register(UINib(nibName: "DoctorsTableViewCell", bundle: nil), forCellReuseIdentifier: "DoctorsTableViewCell")
-   
+        
+        NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "")) { (data, err, bool) in
+            if bool{
+                print("wqenqlwk")
+            }else{
+                
+            }
+        }
     }
     
 
@@ -25,14 +34,12 @@ class ViewController: UIViewController {
 extension ViewController : UITableViewDataSource,UITableViewDelegate{
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1000
+        return 20
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DoctorsTableViewCell", for: indexPath) as! DoctorsTableViewCell
-        cell.selectionStyle = .none
-//        cell.textLabel?.text = "mohammad erbia"
-//        cell.detailTextLabel?.text = "23"
+        cell.selectionStyle = .none 
 
         return cell
     }

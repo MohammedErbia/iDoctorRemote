@@ -26,6 +26,7 @@ extension UIViewController {
                 switch MyRechability.connection {
                 case .cellular:
                     print("Mobile Data")
+                    
 //                    self.displayMessage(message: "Connected by cellular data", messageError: false)
                 case .wifi:
                      print("wifi")

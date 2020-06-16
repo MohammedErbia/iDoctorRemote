@@ -14,11 +14,13 @@ var hud: WSProgressHUD?
 extension UIViewController {
     
     func hidHUD (){
+       
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
             hud?.dismiss()
         })
     }
     func showHUDLoder() {
+         handleReachability()
         if let nav = navigationController{
             hud = WSProgressHUD(view: nav.view)
         }else if let tab = tabBarController {
@@ -38,7 +40,7 @@ extension UIViewController {
         hud?.show(with: .clear)
     }
     func showHUD(title:String? = nil , details: String? = nil) {
-        
+       
         var hud: WSProgressHUD?
          if let nav = navigationController{
                   hud = WSProgressHUD(view: nav.view)

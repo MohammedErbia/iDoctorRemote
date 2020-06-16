@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		DA1D5C8D24984074005828C9 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */; };
 		DA1D5C942498FF24005828C9 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C932498FF24005828C9 /* searchViewController.swift */; };
 		DA1D5C962498FF74005828C9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C952498FF74005828C9 /* NotificationViewController.swift */; };
+		DA1D5C9724991E98005828C9 /* UIViewController+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AB24793AB90042CDC8 /* UIViewController+HUD.swift */; };
 		DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AD24793AB90042CDC8 /* WindowManger.swift */; };
 		DA781FCA248158F100A3B183 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AE24793AB90042CDC8 /* DataUser.swift */; };
 		DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA781FCC248168DB00A3B183 /* UITabBarController.swift */; };
@@ -258,13 +259,13 @@
 			isa = PBXGroup;
 			children = (
 				DA7B57A824793AB90042CDC8 /* NetworkManger.swift */,
+				DA7B57AF24793AB90042CDC8 /* Network.swift */,
 				DA7B57A924793AB90042CDC8 /* UIView+Extention.swift */,
 				DA7B57AA24793AB90042CDC8 /* UIView+Extensions.swift */,
 				DA7B57AB24793AB90042CDC8 /* UIViewController+HUD.swift */,
 				DA7B57AC24793AB90042CDC8 /* TextFiledPadding.swift */,
 				DA7B57AD24793AB90042CDC8 /* WindowManger.swift */,
 				DA7B57AE24793AB90042CDC8 /* DataUser.swift */,
-				DA7B57AF24793AB90042CDC8 /* Network.swift */,
 				DA7B57B024793AB90042CDC8 /* UISearchBar.swift */,
 				DA7B57B124793AB90042CDC8 /* String+html.swift */,
 			);
@@ -617,6 +618,7 @@
 				4A450874248D4A5300F12DBD /* AccountVC.swift in Sources */,
 				4A135A2C249904C9007E6F4A /* APIRouter.swift in Sources */,
 				4A135A3224990511007E6F4A /* getInsurances.swift in Sources */,
+				DA1D5C9724991E98005828C9 /* UIViewController+HUD.swift in Sources */,
 				DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */,
 				DA7B57B324793AC60042CDC8 /* UIView+Extention.swift in Sources */,
 				DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */,

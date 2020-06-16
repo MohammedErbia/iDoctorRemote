@@ -45,7 +45,7 @@ import UIKit
  //     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchVC") as! SearchVC
  //     vc.Key = searchText
  //     self.navigationController?.pushViewController(vc, animated: true)
-      searchController.searchBar.text = ""
+//      searchController.searchBar.text = ""
       }
       
   }
