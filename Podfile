@@ -6,7 +6,9 @@ target 'iDoctor' do
   use_frameworks!
 
 #   Pods for iDoctor
-
+pod 'Alamofire'
+pod 'Kingfisher'
+pod 'WSProgressHUD'
   target 'iDoctorTests' do
     inherit! :search_paths
     # Pods for testing

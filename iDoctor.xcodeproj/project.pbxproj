@@ -12,6 +12,8 @@
 		4A135A2C249904C9007E6F4A /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A135A29249904C8007E6F4A /* APIRouter.swift */; };
 		4A135A2D249904C9007E6F4A /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A135A2A249904C9007E6F4A /* NetworkClient.swift */; };
 		4A135A2E249904C9007E6F4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A135A2B249904C9007E6F4A /* Constants.swift */; };
+		4A135A3224990511007E6F4A /* getInsurances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A135A3024990511007E6F4A /* getInsurances.swift */; };
+		4A135A3324990511007E6F4A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A135A3124990511007E6F4A /* Account.swift */; };
 		4A450872248D4A3700F12DBD /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450871248D4A3700F12DBD /* SingUpVC.swift */; };
 		4A450874248D4A5300F12DBD /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450873248D4A5300F12DBD /* AccountVC.swift */; };
 		4A450876248D4A6D00F12DBD /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450875248D4A6D00F12DBD /* RatingVC.swift */; };
@@ -70,6 +72,8 @@
 		4A135A29249904C8007E6F4A /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		4A135A2A249904C9007E6F4A /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		4A135A2B249904C9007E6F4A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A135A3024990511007E6F4A /* getInsurances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getInsurances.swift; sourceTree = "<group>"; };
+		4A135A3124990511007E6F4A /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		4A450871248D4A3700F12DBD /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
 		4A450873248D4A5300F12DBD /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		4A450875248D4A6D00F12DBD /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
@@ -155,6 +159,15 @@
 				4A135A2A249904C9007E6F4A /* NetworkClient.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		4A135A342499051B007E6F4A /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				4A135A3124990511007E6F4A /* Account.swift */,
+				4A135A3024990511007E6F4A /* getInsurances.swift */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 		4A450877248D4EFD00F12DBD /* Account */ = {
@@ -316,6 +329,7 @@
 				DA7B57A724793AB90042CDC8 /* Extention */,
 				DA7B57A2247936FD0042CDC8 /* View */,
 				4A135A2F249904D3007E6F4A /* API */,
+				4A135A342499051B007E6F4A /* Object */,
 				DA90FAEB24774D8C00F9FB7D /* Assets.xcassets */,
 				DA90FAED24774D8C00F9FB7D /* LaunchScreen.storyboard */,
 				DA90FAF024774D8C00F9FB7D /* Info.plist */,
@@ -353,6 +367,7 @@
 				DA90FAD824774D8900F9FB7D /* Sources */,
 				DA90FAD924774D8900F9FB7D /* Frameworks */,
 				DA90FADA24774D8900F9FB7D /* Resources */,
+				8E9E192E81837BF3C3E198B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,6 +405,7 @@
 				DA90FAFC24774D8C00F9FB7D /* Sources */,
 				DA90FAFD24774D8C00F9FB7D /* Frameworks */,
 				DA90FAFE24774D8C00F9FB7D /* Resources */,
+				78BC61D815EDA4633193ACAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -498,6 +514,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		78BC61D815EDA4633193ACAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDoctor-iDoctorUITests/Pods-iDoctor-iDoctorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDoctor-iDoctorUITests/Pods-iDoctor-iDoctorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDoctor-iDoctorUITests/Pods-iDoctor-iDoctorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E9E192E81837BF3C3E198B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDoctor/Pods-iDoctor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDoctor/Pods-iDoctor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDoctor/Pods-iDoctor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		99804671445C54B473DAF3D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -562,9 +612,11 @@
 				DA781FCA248158F100A3B183 /* DataUser.swift in Sources */,
 				DA90FAEA24774D8900F9FB7D /* iDoctor.xcdatamodeld in Sources */,
 				DA7B57BA24793AC60042CDC8 /* UISearchBar.swift in Sources */,
+				4A135A3324990511007E6F4A /* Account.swift in Sources */,
 				DA7B57A5247937330042CDC8 /* DoctorsTableViewCell.swift in Sources */,
 				4A450874248D4A5300F12DBD /* AccountVC.swift in Sources */,
 				4A135A2C249904C9007E6F4A /* APIRouter.swift in Sources */,
+				4A135A3224990511007E6F4A /* getInsurances.swift in Sources */,
 				DA7B57BD24793FB10042CDC8 /* DetailsDoctorViewController.swift in Sources */,
 				DA7B57B324793AC60042CDC8 /* UIView+Extention.swift in Sources */,
 				DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */,

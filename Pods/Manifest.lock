@@ -1,3 +1,30 @@
-PODFILE CHECKSUM: 217211a0ebac8ae9aac6113a7d01546e9d90545e
+PODS:
+  - Alamofire (5.2.1)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+  - Shimmer (1.0.2)
+  - WSProgressHUD (1.1.5):
+    - Shimmer
 
-COCOAPODS: 1.9.1
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - WSProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - Shimmer
+    - WSProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  WSProgressHUD: 8214e549869776514e8055527c590a109c025e3e
+
+PODFILE CHECKSUM: 2984ef646f30f12fed242d4113b74cc9b70032ec
+
+COCOAPODS: 1.9.3
