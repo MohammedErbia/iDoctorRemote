@@ -32,16 +32,24 @@ struct Constant {
         static let gender = "gender"
         static let tokenNotfiaction = "tokenNotfiaction"
         static let rate = "rate"
-        static let user_id = "user_id"
-        static let product_id = "product_id"
-        static let comment = "comment"
-        static let key = "key"
+        
+//        static let user_id = "user_id"
+//        static let product_id = "product_id"
+//        static let comment = "comment"
+//        static let key = "key"
         
         
         
         static let id = "id"
         static let token = "token"
         static let userId = "user_id"
+        
+        
+        //MARK:- get_objects
+        static let lat = "lat"
+        static let long = "long"
+        static let type = "type"
+        
     }
     
 }

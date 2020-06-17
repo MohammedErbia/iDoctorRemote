@@ -8,12 +8,12 @@
 
 import Foundation
 import Alamofire
-
+///
 enum APIRouter: URLRequestConvertible {
     case register(
         username:String,useremail:String,usergender:Int,password:String,userinsurance:Int,city:Int,BOB:String,userType:Int)
     case login(email:String, password:String)
-   
+    case get_objects(lat:String, long:String,type:String)
     
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
@@ -21,6 +21,8 @@ enum APIRouter: URLRequestConvertible {
         case .login:
             return .post
         case .register:
+            return .post
+        case .get_objects:
             return .post
         
         }
@@ -32,9 +34,11 @@ enum APIRouter: URLRequestConvertible {
             
         
         case .login:
-            return "/api/login.php?"
+            return "/api/login.php"
         case .register:
             return "/api/register.php"
+            case .get_objects:
+             return "/api/get_objects.php"
         
        
         }
@@ -43,34 +47,47 @@ enum APIRouter: URLRequestConvertible {
     // MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-       case .register(username: let username,
-                      useremail: let useremail,
-                      usergender: let usergender,
-                      password:let password,
-                      userinsurance:let userinsurance,
-                      city:let city,
-                      BOB:let BOB, userType:let userType):
-       return[Constant.APIParameterKey.UserName:username,
-              Constant.APIParameterKey.UserEmail:useremail,
-              Constant.APIParameterKey.Ginder:usergender,
-              Constant.APIParameterKey.UserType:userType,
-              Constant.APIParameterKey.UserPasswored:password,
-              Constant.APIParameterKey.UserInsurance:userinsurance,
-              Constant.APIParameterKey.city:city,
-              Constant.APIParameterKey.DOB:BOB]
+       case .register(
+        username: let username,
+        useremail: let useremail,
+        usergender: let usergender,
+        password:let password,
+        userinsurance:let userinsurance,
+        city:let city,
+        BOB:let BOB, userType:let userType):
+       return[
+        Constant.APIParameterKey.UserName:username,
+        Constant.APIParameterKey.UserEmail:useremail,
+        Constant.APIParameterKey.Ginder:usergender,
+        Constant.APIParameterKey.UserType:userType,
+        Constant.APIParameterKey.UserPasswored:password,
+        Constant.APIParameterKey.UserInsurance:userinsurance,
+        Constant.APIParameterKey.city:city,
+        Constant.APIParameterKey.DOB:BOB
+            ]
               
               
 
         case .login(email: let email, password: let password):
-            return [Constant.APIParameterKey.email: email, Constant.APIParameterKey.password: password]
+            return [
+                Constant.APIParameterKey.email: email,
+                Constant.APIParameterKey.password: password
+            ]
         
         
-        
+         
+        case .get_objects(lat: let lat, long: let long, type: let type):
+            return [
+                Constant.APIParameterKey.lat: lat,
+                Constant.APIParameterKey.long: long,
+                Constant.APIParameterKey.type: type
+            ]
+            
         }
     }
     
     // MARK: - headers
-  private  var headers: HTTPHeaders? {
+    private  var headers: [String:String]? {
     switch self {
 
     case .register(username: _, useremail: _, usergender: _, password: _, userinsurance: _, city: _, BOB: _, userType: _):
@@ -78,102 +95,80 @@ enum APIRouter: URLRequestConvertible {
     case .login(email: _, password: _):
         return nil
     
-   
-
-    }
+    
+    case .get_objects(lat: _, long: _, type: _):
+        return nil
+        }
 
     }
 
     // MARK: - URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
         let url = try Constant.ProductionServer.baseURL.asURL()
-        
+       
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
-        
+         print(urlRequest)
         // HTTP Method
         urlRequest.httpMethod = method.rawValue
         
         // Common Headers
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.authentication.rawValue)
-        
-        
-       // urlRequest.allHTTPHeaderFields = Headers.generateHeader()
-        //urlRequest.allHTTPHeaderFields = WebserviceConfig().generateHeader()
-
+//        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
+//        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+//        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.authentication.rawValue)
+         
         // Parameters
-        urlRequest.setValue("application/x-www-form-urlencoded charset=utf-8", forHTTPHeaderField: "Content-Type")
-
         if let parameters = parameters {
             do {
-                
-//                urlRequest.httpBody = json!.data(using: String.Encoding.utf8.rawValue);
-
-               // let postString = let postString = self.getPostString(params: parameters)
-//                urlRequest.httpBody = postString.data(using: .utf8)
-//                urlRequest.httpBody = postString.data(using: .utf8)
-              //  urlRequest.httpBody = .data(using: String.Encoding.utf8)
-                let par = try JSONSerialization.data(withJSONObject: parameters, options: [])
-//                urlRequest.httpBody = (using: String.Encoding.utf8.rawValue);
-
-                urlRequest.httpBody = par
-                print(parameters)
+                     
+                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
             } catch {
                 throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
             }
         }
-        
-        
-        /*
+         
         if let header = headers {
             do{
-//                urlRequest.allHTTPHeaderFields = headers
+                urlRequest.allHTTPHeaderFields = header
                 
             } catch{
                 throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
             }
 
-        }*/
-        
-//        urlRequest.httpBody?.base64EncodedData()
+        }
         return urlRequest
     }
 }
-struct Headers {
+ 
+//struct Headers {
+//
+///// - Returns: A configured header in the form of JSON dictionary.
+//func generateHeader() -> [String: Any] {
+//    var headerDict = [String: Any]()
+//    headerDict["Authorization"] = "application/json"
+//    headerDict["token"] = "fyfrgjirgjrigjrigjri"
+//    return headerDict
+//    }
+//
+//}
 
-/// - Returns: A configured header in the form of JSON dictionary.
-func generateHeader() -> [String: Any] {
-    var headerDict = [String: Any]()
-    headerDict["Authorization"] = "application/json"
-    headerDict["token"] = "fyfrgjirgjrigjrigjri"
-    return headerDict
-    }
-    
-}
+
 class Reqost {
-        static func login(email:String, password:String,completion:@escaping ( Login? , _ error:Error?)->Void){
-        
+        static func test(completion:@escaping ( [get_objects]? , _ error:Error?)->Void){
         let data = [
-            
-            "email"    : email,
-            "password" : password
-            
+            "lat"    : "31.3547",
+            "type"    : "1",
+            "long" : "34.3088"
         ]
-        
-            AF.request("https://idoctortech.com/api/login.php", method:.post, parameters: data, encoding: URLEncoding.default)
+            AF.request("https://idoctortech.com/api/get_objects.php", method:.post, parameters: data)
             .responseJSON { (response) in
-                
                 switch response.result{
-                    
                 case.success( _):
                     do {
                         let decoder = JSONDecoder()
-                        let data = try decoder.decode(Login.self, from: response.data!)
-                        //let token = data.access_token
-                        //print(token)
-                        
+                        let data = try decoder.decode([get_objects].self, from: response.data!)
+                        print(data)
                         completion(data , nil)
+                        
                         
                     }
                     catch let jsonError{
@@ -183,7 +178,7 @@ class Reqost {
                     print("error")
                     completion(nil , error)
                 }
-                
+
         }
     }
 

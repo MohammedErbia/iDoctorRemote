@@ -9,6 +9,58 @@
 import UIKit
 import WSProgressHUD
 
+//https://stackoverflow.com/questions/29633938/swift-displaying-alerts-best-practices
+//extension UIViewController {
+////    presentAlertWithTitle(title: "medo", message: "test", options: "Done","error", "ok ") { (tt) in
+////        if tt == 0{
+////            print("00000000000")
+////        }else if tt == 1{
+////            print("11111111111")
+////        }else{
+////            print("else else")
+////        }
+////
+////
+////    }
+//    func presentAlertWithTitle(title: String, message: String, options: String..., completion: @escaping (Int) -> Void) {
+//
+//        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        if options.count == 0 {
+//            let OKAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+//                 completion(0)
+//            })
+//            alertController.addAction(OKAction)
+//        } else {
+//
+//            for (index, option) in options.enumerated() {
+//                 alertController.addAction(UIAlertAction.init(title: option, style: .default, handler: { (action) in
+//                    completion(index)
+//                }))
+//            }
+//        }
+//        self.present(alertController, animated: true, completion: nil)
+//    }
+//
+//}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Do any additional setup after loading the view.
+//        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+//
+//        alert.view.tintColor = UIColor.black
+////        alert.view.backgroundColor = .black
+//        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+//        loadingIndicator.hidesWhenStopped = true
+//        loadingIndicator.style = UIActivityIndicatorView.Style.gray
+//        loadingIndicator.startAnimating();
+//
+//        alert.view.addSubview(loadingIndicator)
+//        present(alert, animated: true, completion: nil)
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//            self.dismiss(animated: true, completion: nil)
+//        }
+
 var hud: WSProgressHUD?
 
 extension UIViewController {

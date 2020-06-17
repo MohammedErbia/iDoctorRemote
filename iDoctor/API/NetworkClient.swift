@@ -26,9 +26,12 @@ static func Request<T>(_ object: T.Type, router: APIRouter, respons: @escaping (
                 
             }else{
                 AF.request(router).responseJSON { (response) in
+                    print(response.result)
                     switch response.result{
+                        
                     case .success( _):
                         do {
+                            
                             let decoder = JSONDecoder()
                             let data = try decoder.decode(T.self, from: response.data!)
                             respons(data, nil, false)
@@ -48,7 +51,7 @@ static func Request<T>(_ object: T.Type, router: APIRouter, respons: @escaping (
             }
     }
 }
-
+    
 
 
 

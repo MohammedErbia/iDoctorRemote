@@ -17,10 +17,11 @@ import Foundation
  */
 
 struct Login:Codable {
-    let Responce:responce?
+    var Responce:responce?
     
     struct responce:Codable {
-        let token:String?
-        let status:String?
+        var token:String?
+        var status:String?
+        var id : String?
     }
 }
