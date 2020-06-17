@@ -17,36 +17,52 @@ struct NetworkClient {
     
     //MARK: - Ginaric Request Function
     
-static func Request<T>(_ object: T.Type, router: APIRouter, respons: @escaping ((T?, _ error: Error?, _ NotNetworke : Bool) -> ()))
+    static func Request<T>(_ controller : UIViewController,_ object: T.Type, router: APIRouter, respons: @escaping ((T?, _ error: Error? ) -> ()))
         
         where T: Decodable{
             if !Networke.Netwoke.connectedToNetwork(){
                 print("NO INTRINT CONICTION")
-                respons(nil,nil, true)
+                respons(nil,nil )
+                let vc = UIAlertController.init(title: "errror", message: "", preferredStyle: .alert)
+                
+                vc.addAction(UIAlertAction.init(title: "error", style: .default, handler: { (alrt) in
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "NotificationViewController") as! NotificationViewController
+                    controller.navigationController?.pushViewController(vc, animated: true)
+                }))
+                controller.present(vc, animated: true, completion: nil)
                 
             }else{
+                controller.showHUDLoder()
                 AF.request(router).responseJSON { (response) in
                     print(response.result)
                     switch response.result{
                         
                     case .success( _):
                         do {
-                            
+                             
+//                            controller.dismiss(animated: true, completion: nil)
                             let decoder = JSONDecoder()
                             let data = try decoder.decode(T.self, from: response.data!)
-                            respons(data, nil, false)
+                            respons(data, nil )
+                            controller.hidHUD()
                         }
                         catch let jsonError{
-                            respons(nil,jsonError, false)
+                            controller.dismiss(animated: true, completion: nil)
+                            respons(nil,jsonError )
 //                            failure(jsonError)
+                            controller.hidHUD()
                             print(jsonError)
                             print(jsonError.localizedDescription)
+                            controller.showHUD(title: jsonError.localizedDescription)
                         }
                     case .failure(let error):
-                        respons(nil,error, false)
+                        controller.dismiss(animated: true, completion: nil)
+                        respons(nil,error )
 //                        failure(error)
+                        controller.hidHUD()
                         print(error)
                         print(error.localizedDescription)
+                        controller.showHUD(title: error.localizedDescription)
                     }              }
             }
     }

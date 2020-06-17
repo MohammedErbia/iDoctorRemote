@@ -19,17 +19,8 @@ class LoginVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
 
     }
-    @IBAction func login(_ sender: Any) {
-//         WindowManger.show(.main, animated: true)
-                NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "ibrahim123")) { (data, err, bool) in
-                    if bool{
-                        print("wqenqlwk")
-                    }else{
-                        print(data,"----------")
-                        print("wqenqlwk")
-
-                    }
-                }
+    @IBAction func login(_ sender: Any) { 
+        
         
     }
 }
