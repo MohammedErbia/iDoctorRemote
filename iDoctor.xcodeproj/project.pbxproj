@@ -17,6 +17,8 @@
 		4A450872248D4A3700F12DBD /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450871248D4A3700F12DBD /* SingUpVC.swift */; };
 		4A450874248D4A5300F12DBD /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450873248D4A5300F12DBD /* AccountVC.swift */; };
 		4A450876248D4A6D00F12DBD /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A450875248D4A6D00F12DBD /* RatingVC.swift */; };
+		4A836380249A1F270081FECA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83637F249A1F270081FECA /* MainVC.swift */; };
+		4A836382249A1F9F0081FECA /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A836381249A1F9F0081FECA /* MainTableViewCell.swift */; };
 		4ADE0B002477EE2300A2125B /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE0AFF2477EE2300A2125B /* Account.storyboard */; };
 		C05C49CE8737ABF96095A959 /* Pods_iDoctorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2563DFD3505B735450E109 /* Pods_iDoctorTests.framework */; };
 		DA1D5C642492C3AF005828C9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C632492C3AF005828C9 /* LoginVC.swift */; };
@@ -80,6 +82,8 @@
 		4A450873248D4A5300F12DBD /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		4A450875248D4A6D00F12DBD /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
 		4A5D674685DEE593E416FDFF /* Pods-iDoctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDoctor.debug.xcconfig"; path = "Target Support Files/Pods-iDoctor/Pods-iDoctor.debug.xcconfig"; sourceTree = "<group>"; };
+		4A83637F249A1F270081FECA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4A836381249A1F9F0081FECA /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		4ADE0AFF2477EE2300A2125B /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		631D18139C53678483E8301A /* Pods-iDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDoctor.release.xcconfig"; path = "Target Support Files/Pods-iDoctor/Pods-iDoctor.release.xcconfig"; sourceTree = "<group>"; };
 		89F69C0326EBA70AD9B50A98 /* Pods_iDoctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDoctor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +199,8 @@
 				DA1D5C952498FF74005828C9 /* NotificationViewController.swift */,
 				4A450875248D4A6D00F12DBD /* RatingVC.swift */,
 				DA1D5C8C24984074005828C9 /* AppointmentViewController.swift */,
+				4A83637F249A1F270081FECA /* MainVC.swift */,
+				4A836381249A1F9F0081FECA /* MainTableViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -618,6 +624,7 @@
 				DA7B57BA24793AC60042CDC8 /* UISearchBar.swift in Sources */,
 				4A135A3324990511007E6F4A /* Account.swift in Sources */,
 				DA7B57A5247937330042CDC8 /* DoctorsTableViewCell.swift in Sources */,
+				4A836380249A1F270081FECA /* MainVC.swift in Sources */,
 				4A450874248D4A5300F12DBD /* AccountVC.swift in Sources */,
 				4A135A2C249904C9007E6F4A /* APIRouter.swift in Sources */,
 				4A135A3224990511007E6F4A /* getInsurances.swift in Sources */,
@@ -628,6 +635,7 @@
 				DA1D5C642492C3AF005828C9 /* LoginVC.swift in Sources */,
 				DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */,
 				DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */,
+				4A836382249A1F9F0081FECA /* MainTableViewCell.swift in Sources */,
 				DA1D5C992499FFE0005828C9 /* model.swift in Sources */,
 				DA7B57BB24793AC60042CDC8 /* String+html.swift in Sources */,
 				DA7B57B624793AC60042CDC8 /* TextFiledPadding.swift in Sources */,

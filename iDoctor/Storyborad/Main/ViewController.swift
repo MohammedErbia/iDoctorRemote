@@ -19,18 +19,18 @@ class ViewController: UIViewController {
     
         tableView.register(UINib(nibName: "DoctorsTableViewCell", bundle: nil), forCellReuseIdentifier: "DoctorsTableViewCell")
         
-//        NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "ibrahim123")) { (data, err, bool) in
-//            if bool{
-//                print("wqenqlwk")
-//            }else{
-//                print(data)
-//            }
-//        }
-//
-//        Reqost.test { (data, err) in
-//            print(err)
-//            print(data)
-//        }
+        NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "ibrahim123")) { (data, err, bool) in
+            if bool{
+                print("wqenqlwk")
+            }else{
+                print(data)
+            }
+        }
+
+        Reqost.test { (data, err) in
+            print(err)
+            print(data)
+        }
 //        NetworkClient.Request([get_objects].self, router: .get_objects(lat: "31.3547", long: "34.3088", type: "1")) { (data, err, bool) in
 //            if bool{
 //

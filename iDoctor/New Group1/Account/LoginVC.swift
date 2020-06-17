@@ -20,6 +20,16 @@ class LoginVC: UIViewController {
 
     }
     @IBAction func login(_ sender: Any) {
-         WindowManger.show(.main, animated: true)
+//         WindowManger.show(.main, animated: true)
+                NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "ibrahim123")) { (data, err, bool) in
+                    if bool{
+                        print("wqenqlwk")
+                    }else{
+                        print(data,"----------")
+                        print("wqenqlwk")
+
+                    }
+                }
+        
     }
 }
