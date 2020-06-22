@@ -1,14 +1,14 @@
 //
-//  SingUpVC.swift
+//  TimeVC.swift
 //  iDoctor
 //
-//  Created by mohammed on 6/7/20.
+//  Created by mohammed on 6/18/20.
 //  Copyright © 2020 iDoctor. All rights reserved.
 //
 
 import UIKit
 
-class SingUpVC: UIViewController {
+class TimeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +26,5 @@ class SingUpVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func back(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
 
-    }
-    
-    @IBAction func sigup(_ sender: Any) {
-        WindowManger.show(.main, animated: true)
-    }
 }

@@ -32,7 +32,19 @@ struct NetworkClient {
                 controller.present(vc, animated: true, completion: nil)
                 
             }else{
+                
                 controller.showHUDLoder()
+//                let datatest = AF.request("https://idoctortech.com/api/login.php", method:.post, parameters: data)
+//                .responseJSON { (response) in
+//                    switch response.result{
+//                    case.success( _):
+                
+                AF.request("dmklqmwel", method: .get, parameters: nil  ,headers: nil).responseJSON { (response) in
+                  
+                        print(response.result)
+                   
+                }
+                
                 AF.request(router).responseJSON { (response) in
                     print(response.result)
                     switch response.result{

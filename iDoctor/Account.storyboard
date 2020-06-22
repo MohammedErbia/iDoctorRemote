@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wc0-7r-dOp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wc0-7r-dOp">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -75,7 +75,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="login:" destination="UTd-Kj-b0M" eventType="touchUpInside" id="zX2-Lt-rpA"/>
-                                            <segue destination="yar-z7-JFI" kind="showDetail" id="sxA-64-uHr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -107,7 +106,7 @@
         <!--LoginVC-->
         <scene sceneID="aiy-KI-2Qp">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tgd-hf-xsX" customClass="LoginVC" customModule="iDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tgd-hf-xsX" customClass="LoginVC" customModule="iDoctor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9s-ry-OLC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,7 +296,7 @@
         <!--Navigation Controller-->
         <scene sceneID="tpk-Bh-hOU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="yar-z7-JFI" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="yar-z7-JFI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9cr-VW-kF1">
                         <autoresizingMask key="autoresizingMask"/>
@@ -314,7 +313,7 @@
         <!--انشاء حساب جديد-->
         <scene sceneID="taz-4Y-wtw">
             <objects>
-                <viewController storyboardIdentifier="SingUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rYM-SS-yvE" customClass="SingUpVC" customModule="iDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingUpVC" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rYM-SS-yvE" customClass="SingUpVC" customModule="iDoctor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hha-i2-LMV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

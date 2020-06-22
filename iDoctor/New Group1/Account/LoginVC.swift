@@ -2,7 +2,7 @@
 //  LoginVC.swift
 //  iDoctor
 //
-//  Created by osama on 6/7/20.
+//  Created by mohammed on 6/7/20.
 //  Copyright © 2020 iDoctor. All rights reserved.
 //
 import UIKit
@@ -12,6 +12,7 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
                 
 
@@ -19,8 +20,13 @@ class LoginVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
 
     }
-    @IBAction func login(_ sender: Any) { 
-        
+    @IBAction func login(_ sender: Any) {
+        self.showHUDLoder()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.hidHUD()
+            WindowManger.show(.main, animated: true)
+        }
+
         
     }
 }

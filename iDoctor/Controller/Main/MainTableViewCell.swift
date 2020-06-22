@@ -2,7 +2,7 @@
 //  MainTableViewCell.swift
 //  iDoctor
 //
-//  Created by osama on 6/17/20.
+//  Created by mohammed on 6/17/20.
 //  Copyright © 2020 iDoctor. All rights reserved.
 //
 

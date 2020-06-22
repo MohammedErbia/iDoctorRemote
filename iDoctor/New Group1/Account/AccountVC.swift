@@ -2,7 +2,7 @@
 //  AccountVC.swift
 //  iDoctor
 //
-//  Created by osama on 6/7/20.
+//  Created by mohammed on 6/7/20.
 //  Copyright © 2020 iDoctor. All rights reserved.
 //
 

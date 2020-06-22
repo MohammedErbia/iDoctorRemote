@@ -17,20 +17,46 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        tableView.register(UINib(nibName: "DoctorsTableViewCell", bundle: nil), forCellReuseIdentifier: "DoctorsTableViewCell")
         
-        NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "ibrahim123")) { (data, err, bool) in
-            if bool{
-                print("wqenqlwk")
-            }else{
-                print(data)
-            }
-        }
-
-        Reqost.test { (data, err) in
-            print(err)
+        Reqost.test { (data, error) in
+            print(error)
             print(data)
         }
+        
+        tableView.register(UINib(nibName: "DoctorsTableViewCell", bundle: nil), forCellReuseIdentifier: "DoctorsTableViewCell")
+            
+        
+        
+//<<<<<<< Updated upstream
+//        NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "ibrahim123")) { (data, err, bool) in
+//            if bool{
+//                print("wqenqlwk")
+//            }else{
+//                print(data)
+//            }
+//        }
+//
+//        Reqost.test { (data, err) in
+//            print(err)
+//            print(data)
+        }
+        
+//        NetworkClient.Request(Login.self, router: .login(email: "simba11@gmail.com", password: "simba11")) { (data, err, bool) in
+//            print(err)
+//            print(data)
+//        }
+//        NetworkClient.Request(Login.self, router: .login(email: "ibrahimmabad@gmail.com", password: "ibrahim123")) { (data, err, bool) in
+//            if bool{
+//                print("wqenqlwk")
+//            }else{
+//                print(data)
+//            }
+//        }
+//
+//        Reqost.test { (data, err) in
+//            print(err)
+//            print(data)
+//        }
 //        NetworkClient.Request([get_objects].self, router: .get_objects(lat: "31.3547", long: "34.3088", type: "1")) { (data, err, bool) in
 //            if bool{
 //
@@ -43,7 +69,7 @@ class ViewController: UIViewController {
     }
     
     
-}
+
 //MARK:- table
 extension ViewController : UITableViewDataSource,UITableViewDelegate{
     

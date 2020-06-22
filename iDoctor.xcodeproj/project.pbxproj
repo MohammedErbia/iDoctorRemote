@@ -29,6 +29,7 @@
 		DA1D5C962498FF74005828C9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C952498FF74005828C9 /* NotificationViewController.swift */; };
 		DA1D5C9724991E98005828C9 /* UIViewController+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AB24793AB90042CDC8 /* UIViewController+HUD.swift */; };
 		DA1D5C992499FFE0005828C9 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C982499FFE0005828C9 /* model.swift */; };
+		DA1D5C9B249B8F45005828C9 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D5C9A249B8F45005828C9 /* TimeVC.swift */; };
 		DA781FC9248158F100A3B183 /* WindowManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AD24793AB90042CDC8 /* WindowManger.swift */; };
 		DA781FCA248158F100A3B183 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7B57AE24793AB90042CDC8 /* DataUser.swift */; };
 		DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA781FCC248168DB00A3B183 /* UITabBarController.swift */; };
@@ -98,6 +99,7 @@
 		DA1D5C932498FF24005828C9 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 		DA1D5C952498FF74005828C9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		DA1D5C982499FFE0005828C9 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		DA1D5C9A249B8F45005828C9 /* TimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVC.swift; sourceTree = "<group>"; };
 		DA781FCC248168DB00A3B183 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		DA7B57A3247937330042CDC8 /* DoctorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewCell.swift; sourceTree = "<group>"; };
 		DA7B57A4247937330042CDC8 /* DoctorsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsTableViewCell.xib; sourceTree = "<group>"; };
@@ -168,14 +170,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		4A135A342499051B007E6F4A /* Object */ = {
+		4A135A342499051B007E6F4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				DA1D5C982499FFE0005828C9 /* model.swift */,
 				4A135A3124990511007E6F4A /* Account.swift */,
 				4A135A3024990511007E6F4A /* getInsurances.swift */,
 			);
-			path = Object;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4A450877248D4EFD00F12DBD /* Account */ = {
@@ -205,13 +207,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		4A45087A248D4F5800F12DBD /* Storyborad */ = {
+		4A45087A248D4F5800F12DBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				4A450877248D4EFD00F12DBD /* Account */,
 				4A450879248D4F4300F12DBD /* Main */,
+				DA1D5C9A249B8F45005828C9 /* TimeVC.swift */,
 			);
-			path = Storyborad;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		67DADA869B0FE2FCFA6A23B7 /* Pods */ = {
@@ -334,12 +337,12 @@
 				DA90FADF24774D8900F9FB7D /* AppDelegate.swift */,
 				DA90FAE524774D8900F9FB7D /* Main.storyboard */,
 				4ADE0AFF2477EE2300A2125B /* Account.storyboard */,
-				4A45087A248D4F5800F12DBD /* Storyborad */,
+				4A45087A248D4F5800F12DBD /* Controller */,
 				DA8E3F1B24871D3B0007DDC8 /* Font */,
 				DA7B57A724793AB90042CDC8 /* Extention */,
 				DA7B57A2247936FD0042CDC8 /* View */,
 				4A135A2F249904D3007E6F4A /* API */,
-				4A135A342499051B007E6F4A /* Object */,
+				4A135A342499051B007E6F4A /* Model */,
 				DA90FAEB24774D8C00F9FB7D /* Assets.xcassets */,
 				DA90FAED24774D8C00F9FB7D /* LaunchScreen.storyboard */,
 				DA90FAF024774D8C00F9FB7D /* Info.plist */,
@@ -614,6 +617,7 @@
 				DA781FCD248168DB00A3B183 /* UITabBarController.swift in Sources */,
 				DA7B57B224793AC00042CDC8 /* NetworkManger.swift in Sources */,
 				DA1D5C942498FF24005828C9 /* searchViewController.swift in Sources */,
+				DA1D5C9B249B8F45005828C9 /* TimeVC.swift in Sources */,
 				4A450876248D4A6D00F12DBD /* RatingVC.swift in Sources */,
 				4A135A2D249904C9007E6F4A /* NetworkClient.swift in Sources */,
 				4A135A2E249904C9007E6F4A /* Constants.swift in Sources */,
@@ -815,7 +819,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CPH5Q6DCQM;
+				DEVELOPMENT_TEAM = AB5YCW396A;
 				INFOPLIST_FILE = iDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -834,7 +838,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CPH5Q6DCQM;
+				DEVELOPMENT_TEAM = AB5YCW396A;
 				INFOPLIST_FILE = iDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
