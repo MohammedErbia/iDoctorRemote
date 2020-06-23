@@ -46,7 +46,6 @@
 		DA8E3F1D24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA8E3F1C24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf */; };
 		DA90FAE024774D8900F9FB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FADF24774D8900F9FB7D /* AppDelegate.swift */; };
 		DA90FAE424774D8900F9FB7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90FAE324774D8900F9FB7D /* ViewController.swift */; };
-		DA90FAE724774D8900F9FB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90FAE524774D8900F9FB7D /* Main.storyboard */; };
 		DA90FAEA24774D8900F9FB7D /* iDoctor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA90FAE824774D8900F9FB7D /* iDoctor.xcdatamodeld */; };
 		DA90FAEC24774D8C00F9FB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA90FAEB24774D8C00F9FB7D /* Assets.xcassets */; };
 		DA90FAEF24774D8C00F9FB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA90FAED24774D8C00F9FB7D /* LaunchScreen.storyboard */; };
@@ -119,7 +118,6 @@
 		DA90FADC24774D8900F9FB7D /* iDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA90FADF24774D8900F9FB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA90FAE324774D8900F9FB7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA90FAE624774D8900F9FB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA90FAE924774D8900F9FB7D /* iDoctor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iDoctor.xcdatamodel; sourceTree = "<group>"; };
 		DA90FAEB24774D8C00F9FB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA90FAEE24774D8C00F9FB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -335,7 +333,6 @@
 			isa = PBXGroup;
 			children = (
 				DA90FADF24774D8900F9FB7D /* AppDelegate.swift */,
-				DA90FAE524774D8900F9FB7D /* Main.storyboard */,
 				4ADE0AFF2477EE2300A2125B /* Account.storyboard */,
 				4A45087A248D4F5800F12DBD /* Controller */,
 				DA8E3F1B24871D3B0007DDC8 /* Font */,
@@ -484,7 +481,6 @@
 				DA8E3F1D24871D470007DDC8 /* FontsFree-Net-Proxima-Nova-Sbold.otf in Resources */,
 				DA90FAEC24774D8C00F9FB7D /* Assets.xcassets in Resources */,
 				4ADE0B002477EE2300A2125B /* Account.storyboard in Resources */,
-				DA90FAE724774D8900F9FB7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,14 +676,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA90FAE524774D8900F9FB7D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA90FAE624774D8900F9FB7D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA90FAED24774D8C00F9FB7D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -825,7 +813,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammed.iDoctor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -844,7 +832,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammed.iDoctor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
