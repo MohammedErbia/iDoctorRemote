@@ -10,6 +10,13 @@ import UIKit
 
 class appointmentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageUI: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var subname: UILabel!
+    @IBOutlet weak var adress: UILabel!
+    @IBOutlet weak var day: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var time: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -37,9 +37,9 @@ extension AppointmentViewController : UITableViewDataSource,UITableViewDelegate{
     }
 //TimeVC
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TimeVC") as! TimeVC
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let vc = TimeVC.initFromStoryboard()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
 
 }

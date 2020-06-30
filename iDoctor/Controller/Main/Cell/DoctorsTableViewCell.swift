@@ -10,6 +10,11 @@ import UIKit
 
 class DoctorsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titel: UILabel!
+    @IBOutlet weak var subtitel: UILabel!
+    @IBOutlet weak var adress: UILabel!
+    @IBOutlet weak var imageuser: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
