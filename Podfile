@@ -9,6 +9,10 @@ target 'iDoctor' do
 pod 'Alamofire'
 pod 'Kingfisher'
 pod 'WSProgressHUD'
+pod 'RSWIFT'
+pod 'modelData'
+pod 'peackerData'
+
   target 'iDoctorTests' do
     inherit! :search_paths
     # Pods for testing
