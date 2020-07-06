@@ -16,3 +16,19 @@ import Foundation
         "insurance_state": "1"
     },
  */
+
+struct get_ins: Codable {
+    let insuranceID: String?
+    let insuranceEnName: String?
+    let insuranceArName: String?
+    let insuranceDiscount: String?
+    let insuranceState: String?
+
+    enum CodingKeys: String, CodingKey {
+        case insuranceID = "insurance_id"
+        case insuranceEnName = "insurance_en_name"
+        case insuranceArName = "insurance_ar_name"
+        case insuranceDiscount = "insurance_discount"
+        case insuranceState = "insurance_state"
+    }
+}

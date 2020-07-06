@@ -76,5 +76,12 @@ class DetailsDoctorViewController: UIViewController,StoryboardInitializable {
         vc.object = self.object
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+    func add() {
+          titel.text = en ? object?.objectEnName ?? "err objectEnName" : object?.objectArName ?? "err objectArName"
+               adress.text = en ? object?.objectEnAddress ?? "err objectEnAddress" : object?.objectArAddress ?? "err objectArAddress"
+               imageUI.kf.indicatorType = .activity
+               imageUI.kf.setImage(with: URL(string: object?.objectImage ?? ""), placeholder: UIImage(named:"personuser"))
+              descriptionUI.text = en ? object?.objectEnDesc?.html2String ?? " err objectEnDesc" : object?.objectArDesc?.html2String ?? "err objectArDesc"
+              
+    }
 }

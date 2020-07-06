@@ -17,6 +17,9 @@ class AppointmentViewController: UIViewController {
             self.table.estimatedRowHeight = 100
             self.table.rowHeight = UITableView.automaticDimension 
         table.register(UINib(nibName: "appointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "appointmentTableViewCell")
+        table.register(UINib(nibName: "appointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "appointmentTableViewCell")
+        table.register(UINib(nibName: "appointmentTableViewCell", bundle: nil), forCellReuseIdentifier: "appointmentTableViewCell")
+        
     }
     
  

@@ -12,13 +12,13 @@ class NotificationViewController: UIViewController,StoryboardInitializable {
      
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+       
 }
     
     
 }
 extension NotificationViewController : UITableViewDataSource,UITableViewDelegate{
-
+ 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }

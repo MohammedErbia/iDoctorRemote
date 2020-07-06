@@ -39,13 +39,13 @@ import UIKit
   func updateSearchResults(for searchController: UISearchController) {
       print("Searching with: " + (searchController.searchBar.text ?? ""))
       let searchText = (searchController.searchBar.text ?? "")
- //     guard searchText.count > 2 && !searchText.isEmpty else {
- //         return
- //     }
- //     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchVC") as! SearchVC
- //     vc.Key = searchText
- //     self.navigationController?.pushViewController(vc, animated: true)
-//      searchController.searchBar.text = ""
+      guard searchText.count > 2 && !searchText.isEmpty else {
+          return
+      }
+      let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchVC") as! SearchVC
+      vc.Key = searchText
+      self.navigationController?.pushViewController(vc, animated: true)
+      searchController.searchBar.text = ""
       }
       
   }

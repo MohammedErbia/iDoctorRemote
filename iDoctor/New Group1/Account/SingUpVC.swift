@@ -12,7 +12,7 @@ class SingUpVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
         // Do any additional setup after loading the view.
     }
     
@@ -27,11 +27,12 @@ class SingUpVC: UIViewController {
     }
     */
     @IBAction func back(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+         self.navigationController?.popViewController(animated: true)
 
     }
-    
+     
     @IBAction func sigup(_ sender: Any) {
         WindowManger.show(.main, animated: true)
     }
 }
+ 

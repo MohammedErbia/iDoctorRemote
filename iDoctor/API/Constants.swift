@@ -5,7 +5,7 @@
 //  Created by osama on 4/22/20.
 //  Copyright © 2020 Gift. All rights reserved.
 //
-
+ 
 import Foundation
 import Alamofire
 struct Constant {

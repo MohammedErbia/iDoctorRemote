@@ -8,7 +8,7 @@
 
 import UIKit 
 class MainVC: UIViewController {
-
+ 
     @IBOutlet weak var tableview: UITableView!
     
     
@@ -17,10 +17,10 @@ class MainVC: UIViewController {
 //        print(err)
 //        print(data)
         
-//        self.get_appos(self, token: "YzRjYTQyMzhhMGI5MjM4MjBkY2M1MDlhNmY3NTg0OWI=", id: "1") { (data, err) in
-//            print(err)
-//            print(data)
-//        } 
+        self.get_appos(self, token: "YzRjYTQyMzhhMGI5MjM4MjBkY2M1MDlhNmY3NTg0OWI=", id: "1") { (data, err) in
+            print(err)
+            print(data)
+        } 
         
     }
 }
@@ -42,7 +42,7 @@ extension MainVC:UITableViewDelegate ,UITableViewDataSource{
          let vc =  ViewController.initFromStoryboard()
          self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+     
     
 }
 

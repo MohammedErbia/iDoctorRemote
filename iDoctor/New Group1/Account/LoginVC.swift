@@ -14,7 +14,7 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
         self.hideKeyboardWhenTappedAround()
     }
-                
+       
 
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -26,7 +26,7 @@ class LoginVC: UIViewController {
             self.hidHUD()
             WindowManger.show(.main, animated: true)
         }
-
+ 
         
     }
 }

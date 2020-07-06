@@ -21,7 +21,7 @@ class ViewController: UIViewController,StoryboardInitializable,CLLocationManager
         super.viewDidLoad()
         loadData()
         tableView.register(UINib(nibName: "DoctorsTableViewCell", bundle: nil), forCellReuseIdentifier: "DoctorsTableViewCell")
-        
+         
         
         
     }
@@ -35,8 +35,7 @@ class ViewController: UIViewController,StoryboardInitializable,CLLocationManager
                 let location = locationManager.location?.coordinate
                 print(location?.latitude ?? "",location?.longitude ?? "")
                 //FIXME:- fix type error number 1
-                self.get_objects(self, lat: "\(location?.latitude.binade ?? 0.0)", long:  "\(location?.latitude.binade ?? 0.0)", type: /*data?.type ?? */ "1") { (data, err) in
-                    if err != nil {
+                self.get_objects(self, lat: "\(location?.latitude.binade ?? 0.0)", long:  "\(location?.latitude.binade ?? 0.0)", type: /*data?.type ?? */ "1") { (data, err) in            if err != nil {
                         self.showHUD(title: "error", details: err?.localizedDescription ?? "error")
                     }else{
                         self.object = data ?? []
@@ -50,7 +49,7 @@ class ViewController: UIViewController,StoryboardInitializable,CLLocationManager
         }
     }}
 
-
+ 
 //MARK:- table
 extension ViewController : UITableViewDataSource,UITableViewDelegate{
     
@@ -76,16 +75,16 @@ extension ViewController : UITableViewDataSource,UITableViewDelegate{
         vc.object = object[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+     
 }
-//extension ViewController : CLLocationManagerDelegate{
-////    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-////        guard let location: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-////        // set the value of lat and long
-//////        self.latitude = location.latitude
-//////        self.longitude = location.longitude
-//////        print("latiTude=\(location.latitude)&longiTude=\(location.longitude)")
-//////         locationManager.stopUpdatingLocation()
-//////        print("latiTude=\(location.latitude)&longiTude=\(location.longitude)")
-////    }
-//}
+extension ViewController : CLLocationManagerDelegate{
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+//         set the value of lat and long
+        self.latitude = location.latitude
+        self.longitude = location.longitude
+        print("latiTude=\(location.latitude)&longiTude=\(location.longitude)")
+         locationManager.stopUpdatingLocation()
+        print("latiTude=\(location.latitude)&longiTude=\(location.longitude)")
+//    }
+}

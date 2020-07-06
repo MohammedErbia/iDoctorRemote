@@ -10,6 +10,7 @@ import XCTest
 @testable import iDoctor
 
 
+
 class iDoctorTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -19,7 +20,9 @@ class iDoctorTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    func testAPI() {
+        print("done test")
+    }
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

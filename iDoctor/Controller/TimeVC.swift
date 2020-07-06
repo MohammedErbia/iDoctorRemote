@@ -11,6 +11,10 @@ import UIKit
 class TimeVC: UIViewController,StoryboardInitializable {
      
     var object :  GetObject?
+    var object1 :  GetObject?
+    var object3 :  GetObject?
+    var object2 :  GetObject?
+    
     @IBOutlet weak var pickerDate: UIDatePicker!
     @IBOutlet weak var pickertime: UIDatePicker!
     
@@ -18,7 +22,7 @@ class TimeVC: UIViewController,StoryboardInitializable {
     @IBOutlet weak var datelable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         
         getDate()
         gettime()
         pickerDate.datePickerMode = .date
@@ -26,7 +30,7 @@ class TimeVC: UIViewController,StoryboardInitializable {
         
         pickertime.datePickerMode = .time
         pickertime.addTarget(self, action: #selector(gettimeaction), for:.valueChanged )
-        
+         
     }
     @objc func editbutton(){
         getDate()
@@ -56,6 +60,7 @@ class TimeVC: UIViewController,StoryboardInitializable {
         formmat.timeStyle = .short
         return formmat.string(from: Date())
     }
+    
     @IBAction func next(_ sender: Any) {
         
         let vc =  orderViewController.initFromStoryboard()
@@ -63,10 +68,12 @@ class TimeVC: UIViewController,StoryboardInitializable {
             showHUD(  details: en ?  "Please choose the right time for you":"رجاء اختار الوقت المناسب لك ")
             return
         }
+        
         guard let date = self.datelable.text ,date != datenow() else {
             showHUD(  details: en ?  "Please choose the date for you": "يرجى اختيار التاريخ المناسب لك")
             return
         }
+        
         vc.object = self.object
         vc.time = time
         vc.date = date

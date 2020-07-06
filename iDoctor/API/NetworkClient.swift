@@ -16,7 +16,7 @@ struct NetworkClient {
 //    typealias onFailure = ( (_ error: Error) -> ())
     
     //MARK: - Ginaric Request Function
-    
+     
     static func Request<T>(_ controller : UIViewController,_ object: T.Type, router: APIRouter, respons: @escaping ((T?, _ error: Error? ) -> ()))
         
         where T: Decodable{
@@ -30,7 +30,7 @@ struct NetworkClient {
                     controller.navigationController?.pushViewController(vc, animated: true)
                 }))
                 controller.present(vc, animated: true, completion: nil)
-                
+              
             }else{
                 
                 controller.showHUDLoder()
@@ -44,7 +44,7 @@ struct NetworkClient {
                         print(response.result)
                    
                 }
-                
+             
                 AF.request(router).responseJSON { (response) in
                     print(response.result)
                     switch response.result{
